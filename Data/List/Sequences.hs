@@ -3,6 +3,8 @@
 -- Published under the terms of the GNU General Public License (GPL).
 --
 
+-- | Find sequences within lists.
+
 module Data.List.Sequences where
 
     -- | Find sequences within a list and return them as new list of sequences.
