@@ -13,7 +13,7 @@ Version:             0.1
 Synopsis:            Utilities for working with sequences within lists.
 
 -- A longer description of the package.
--- Description:         
+Description:         Find sequences within lists.
 
 -- The license under which the package is released.
 License:             GPL-3
@@ -28,6 +28,9 @@ Author:              Jonas Kramer
 -- and patches.
 Maintainer:          jkramer@nex.scrapping.cc
 
+Homepage:            https://github.com/jkramer/data-list-sequences
+
+
 -- A copyright notice.
 -- Copyright:           
 
@@ -40,7 +43,7 @@ Build-type:          Simple
 -- Extra-source-files:  
 
 -- Constraint on the version of Cabal needed to build this package.
-Cabal-version:       >=1.2
+Cabal-version:       >=1.6
 
 
 Library
@@ -48,7 +51,7 @@ Library
   Exposed-modules:     Data.List.Sequences
   
   -- Packages needed in order to build this package.
-  Build-depends:       base
+  Build-depends:       base < 5
   
   -- Modules not exported by this package.
   -- Other-modules:       
@@ -56,3 +59,7 @@ Library
   -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
   -- Build-tools:         
   
+
+source-repository head
+    type:       git
+    location:   git://github.com/jkramer/data-list-sequences.git
